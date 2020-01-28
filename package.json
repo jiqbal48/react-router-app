@@ -21,6 +21,9 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
+  "prettier": {
+    "singleQuote": true
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -41,6 +44,7 @@
     "@storybook/addon-links": "^5.3.9",
     "@storybook/addons": "^5.3.9",
     "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^5.3.9"
+    "@storybook/react": "^5.3.9",
+    "prettier": "^1.19.1"
   }
 }
