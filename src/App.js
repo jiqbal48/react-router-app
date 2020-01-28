@@ -1,8 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Button } from '@material-ui/core';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useHistory
+} from 'react-router-dom';
 
 // simple header
 const Header = () => {
+  let history = useHistory();
+  const onClickHandler = () => {
+    console.log('clicked on button to go to about page');
+    history.push('/about');
+  };
   return (
     <nav>
       <ul>
@@ -10,7 +22,7 @@ const Header = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Button onClick={onClickHandler}>to About</Button>
         </li>
         <li>
           <Link to="/users">Users</Link>
