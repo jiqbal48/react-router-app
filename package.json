@@ -1,5 +1,6 @@
 {
   "name": "react-router-app",
+  "description": "hello world. first published npm package. this should export a component that shows react-router working. to be also used andriod webview",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
