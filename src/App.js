@@ -13,19 +13,19 @@ const Header = () => {
   let history = useHistory();
   const onClickHandler = () => {
     console.log('clicked on button to go to about page');
-    history.push('/about');
+    history.push('/aboutt');
   };
   return (
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/homee">Home</Link>
         </li>
         <li>
           <Button onClick={onClickHandler}>to About</Button>
         </li>
         <li>
-          <Link to="/users">Users</Link>
+          <Link to="/userss">Users</Link>
         </li>
       </ul>
     </nav>
@@ -39,13 +39,13 @@ function ReactRouterComponent() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
+          <Route path="/aboutt">
             <About />
           </Route>
-          <Route path="/users">
+          <Route path="/userss">
             <Users />
           </Route>
-          <Route path="/">
+          <Route path="/homee">
             <Home />
           </Route>
         </Switch>
